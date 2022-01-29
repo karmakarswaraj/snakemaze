@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.body{
+    background-color: rgb(189, 126, 252) ;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#board{
+    border: 2px solid rgb(48, 136, 151);
+    border-radius: 10px;
+    background-color: rgb(162, 250, 103);
+    height: 90vmin;
+    width: 92vmin;
+    display: grid;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.39);
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background-color: rgb(5, 78, 5);
+    border: 2px solid burlywood;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.39);
+}
+
+.food{
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    background-color: rgb(184, 19, 19);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.snake{
+    background-color: rgb(73, 146, 5);
+    border-radius: 50px;
+    border: burlywood;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.39);
+}
+
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* 
+.btn1{
+    position: absolute;
+    top: 120px;
+    right: 151px;
+    padding: 17px 17px 17px 17px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.btn2{
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    padding: 17px 17px 17px 17px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.btn3{
+    position: absolute;
+    top: 170px;
+    right: 200px;
+    padding: 17px 17px 17px 17px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.btn4{
+    position: absolute;
+    top: 220px;
+    right: 151px;
+    padding: 17px 17px 17px 17px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.c{
+    position: absolute;
+    top: 188px;
+    right: 165px;
+    height: 16px;
+    width: 16px;
+    border: 1px dotted black;
+    background-color: rgb(255, 97, 97);
+    border-radius: 50%;
+} */
