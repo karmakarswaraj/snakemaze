@@ -4,7 +4,7 @@ let gameOverSound = new Audio('../music/gameover.mp3');
 let moveSound = new Audio('../music/move.mp3');
 let musicSound = new Audio('../music/music.mp3');
 let lastPaintTime = 0;
-let speed = 15;
+let speed = 10;
 let score = 0;
 let snakeArr = [
     { x: 13, y: 15 }
@@ -43,7 +43,7 @@ function gameEngine(){
         inputDir =  {x: 0, y: 0}; 
         alert("Game Over. Press any key to play again!");
         snakeArr = [{x: 13, y: 15}];
-        // musicSound.play();
+        musicSound.play();
         score = 0; 
     }
     //IF FOOD IS EATEN INCREMENT THE SCORE AND REGENERATE THEW FOOD
@@ -96,7 +96,7 @@ snakeArr[0].y += inputDir.y;
 
 // LOGICAL FUNCTIONs
 
-// musicSound.play();
+musicSound.play();
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
